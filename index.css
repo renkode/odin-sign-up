@@ -1,0 +1,29 @@
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: row;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-transform: uppercase;
+}
+
+.registration-login {
+  display: flex;
+  flex-direction: column;
+}
