@@ -1,7 +1,96 @@
-.square {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url(./Norse-Bold.otf);
+}
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(37, 37, 37);
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.body-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+}
+
+.banner-background {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  max-width: max(330px, 28vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.odin-logo {
+  width: 15%;
+}
+
+.banner {
+  font-family: 'Norse-Bold';
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: min(5.5rem, 6vw);
+  background-color: rgba(0, 0, 0, 0.384);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.banner-credits {
+  position: absolute;
+  color: white;
+  bottom: 4%;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.banner-credits a {
+  color: white;
+}
+
+.sign-up-wrapper {
+  flex: 1;
+  flex-shrink: 1;
+  background-color: rgb(239, 242, 245);;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.description {
+  padding: 0px 50px;
+  max-width: 500px;
+}
+
+.form-wrapper {
+  background-color: white;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.11);
+  padding: 24px 50px;
+  margin: 30px 0px;
+}
+
+.form-wrapper h3 {
+  margin-top: 0;
 }
 
 .fieldset-wrapper {
@@ -12,18 +101,54 @@
 .fieldset {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: min(480px, 100%);
+  margin-bottom: 20px;
 }
 
 .field {
   display: flex;
   flex-direction: column;
+  width: 43%;
 }
 
 label {
   text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: rgb(75, 75, 90);
+}
+
+input {
+  height: 1.6rem;
+  border: 1px solid rgba(128, 128, 128, 0.363);
+  border-radius: 5px;
 }
 
 .registration-login {
   display: flex;
   flex-direction: column;
+  width: 250px;
+  padding: 0px 40px;
+}
+
+.registration-login a {
+  color: #596D48;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+button {
+  border: 0px;
+  background-color: #596D48;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 1rem;
+  height: 2.5rem;
+  width: 75%;
+  margin-bottom: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.301);
 }
