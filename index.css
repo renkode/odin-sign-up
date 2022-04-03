@@ -58,7 +58,7 @@ html, body {
 .banner-credits {
   position: absolute;
   color: white;
-  bottom: 4%;
+  bottom: 2%;
   text-align: center;
   font-size: 0.85rem;
 }
@@ -70,16 +70,19 @@ html, body {
 .sign-up-wrapper {
   flex: 1;
   flex-shrink: 1;
-  background-color: rgb(239, 242, 245);;
+  background-color: #F8F9FA;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+}
+
+h3 {
+  font-size: 1.3rem;
 }
 
 .description {
   padding: 0px 50px;
-  max-width: 500px;
+  max-width: 650px;
 }
 
 .form-wrapper {
@@ -102,7 +105,7 @@ html, body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: min(480px, 100%);
+  width: min(520px, 100%);
   margin-bottom: 20px;
 }
 
@@ -124,6 +127,25 @@ input {
   height: 1.6rem;
   border: 1px solid rgba(128, 128, 128, 0.363);
   border-radius: 5px;
+  background-color: #FFFDFD;
+  padding: 2px 10px;
+  font-size: 0.9rem;
+}
+
+input:focus {
+  outline: 1px solid blue;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199);
+}
+
+input.error, input:invalid {
+  outline: 1px solid rgb(221, 11, 11);
+}
+
+.error-message {
+  color: rgb(221, 11, 11);
+  font-size: 0.75rem;
+  visibility: hidden;
+  margin-top: 2px;
 }
 
 .registration-login {

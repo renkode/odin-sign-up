@@ -15,7 +15,7 @@
         </div>
         <div class="sign-up-wrapper">
             <div class="description">
-                <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</h3>
+                <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <i>now</i> to get started.</h3>
                 <h3>You <i>know</i> you want to.</h3>
             </div>
             <div class="form-wrapper">
@@ -39,13 +39,14 @@
                             </div>
                             <div class="field">
                                 <label for="phone-number">Phone Number</label>
-                                <input type="tel" id="phone-number" name="phone-number">
+                                <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                             </div>
                         </div>
                         <div class="fieldset">
                             <div class="field">
                                 <label for="user-password">Password</label>
                                 <input type="password" id="user-password" name="user-password">
+                                <div class="error-message">* Passwords do not match</div>
                             </div>
                             <div class="field">
                                 <label for="confirm-password">Confirm Password</label>
@@ -61,5 +62,6 @@
             </div>
         </div>
     </div>
+    <script src="validation.js"></script>
 </body>
 </html>
